@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Coffee Companion</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet">  
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="index.css">
+
+        <!-- Javascript -->
+        <script src="index.js" charser="utf-8" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <div class ="navBar">
+                <a href = "/"><img src="logo.png" class = "logo" alt="Logo"></a>   
+                    <div class="navLinks">
+                        <a href="/e">Espresso Drinks</a>
+                        <a href="/f">Filter Coffee</a>
+                        <a href="/r">Recipe Maker</a>  
+                    </div>
+            </div>
+        </header>
+
+        <main class = "contents">
+
+            <section id ="poDrinks">
+
+            <!-- <div class = "fadeIn"> -->
+
+                <div class = "fadeIn drink1">
+                    <div class="drink" onclick="window.open('/r/affogato', '_self' )">
+                        <div class="drink-content">
+                            <div class="flip-card-front">
+                                <div class="image-container">
+                                    <img src = "espresso/affogato.jpg" alt="affogato coffee">
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href ="/r/affogato"><h1> Affogato </h1></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "fadeIn drink2">
+                    <div class="drink" onclick="window.open('/r/americano', '_self')">
+                        <div class="drink-content">
+                            <div class="flip-card-front">
+                                <div class="image-container">
+                                    <img src = "espresso/americano.jpg" alt="americano coffee">
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href ="/r/americano"><h1> Americano </h1></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "fadeIn drink3">
+                    <div class="drink" onclick="window.open('/r/cappuccino', '_self')">
+                        <div class="drink-content">
+                            <div class="flip-card-front">
+                                <div class="image-container">
+                                    <img src = "espresso/cappuccino.jpg" alt="cappuccino coffee">
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href ="/r/cappuccino"> <h1> Cappuccino </h1></a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+                <div class = "fadeIn drink4">
+                    <div class="drink" onclick="window.open('/r/espresso', '_self')">
+                        <div class="drink-content">
+                            <div class="flip-card-front">
+                                <div class="image-container">
+                                    <img src = "espresso/espresso.jpg" alt="espresso coffee">
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href ="/r/espresso"><h1> Espresso </h1></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "fadeIn drink5">
+                    <div class="drink" onclick="window.open('/r/sparklingamericano', '_self')">
+                        <div class="drink-content">
+                            <div class="flip-card-front">
+                                <div class="image-container">
+                                    <img src = "espresso/sparkling.jpg" alt="iced-coffee coffee">
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href ="/r/sparklingamericano"> <h1> Sparkling Americano </h1></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        
+                <div class = "fadeIn drink6">
+                    <div class="drink" onclick="window.open('/r/latte', '_self')">
+                        <div class="drink-content">
+                            <div class="flip-card-front">
+                                <div class="image-container">
+                                    <img src = "espresso/latte.jpg" alt="latte coffee">
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href ="/r/latte"> <h1> Latte </h1></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "fadeIn drink7">
+                    <div class="drink" onclick="window.open('/r/mocha', '_self')">
+                        <div class="drink-content">
+                            <div class="flip-card-front">
+                                <div class="image-container">
+                                    <img src = "espresso/mocha.jpg" alt="mocha coffee">
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href ="/r/mocha"> <h1> Mocha </h1></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "fadeIn drink8">
+                    <div class="drink" onclick="window.open('/r/redeye', '_self')">
+                        <div class="drink-content">
+                            <div class="flip-card-front">
+                                <div class="image-container">
+                                    <img src = "espresso/red-eye.jpg" alt="red-eye coffee">
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href ="/r/redeye"> <h1> Red Eye </h1> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "fadeIn drink9">
+                    <div class="drink" onclick="window.open('/r/cortado', '_self')">
+                        <div class="drink-content">
+                            <div class="flip-card-front">
+                                <div class="image-container">
+                                    <img src = "espresso/cortado.jpg" alt="red-eye coffee">
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <a href = "/r/cortado"> <h1> Cortado </h1></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- </div> -->
+            </section>
+
+
+        </main>
+        
+    </body>
+</html>

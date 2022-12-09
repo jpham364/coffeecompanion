@@ -1,0 +1,26 @@
+[
+  {
+    "beanName": "Ethiopian Yirgacheffe",
+    "weight": "340",
+    "roast": "medium",
+    "notes": "Roasted on 12/2/22"
+  },
+  {
+    "beanName": "Beans",
+    "weight": "230",
+    "roast": "medium",
+    "notes": "Used 12/09"
+  },
+  {
+    "beanName": "Columbian",
+    "weight": "100",
+    "roast": "medium",
+    "notes": "This is a cool bag of beans"
+  },
+  {
+    "beanName": "Jon",
+    "weight": "243",
+    "roast": "light",
+    "notes": "adsfsfdfa"
+  }
+]
